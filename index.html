@@ -1,339 +1,84 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
+---
+layout: default
+title: Open Horizon Labs &gt; home
+section_id: home
 
-<title>Open Horizon Labs</title>
-<meta name="description" content="Open Horizon Labs">
-<meta name="author" content="Open Horizon Labs">
+milestones:
+  - from: 0
+    to: 2
+    title: In-house projects in progress
+  - from: 0
+    to: 18
+    title: Cups of <a href="http://www.artiscoffee.com/">Artis</a> coffee per week
+  - from: 0
+    to: 14
+    title: Average git commits per day
+  - from: 0
+    to: 3
+    title: Statistical dashboards in office
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<meta name="apple-mobile-web-app-capable" content="yes">
+---
 
-<!-- LOCAL VERSION - This version doesn't require a web server to show the page properly -->
-<link rel="stylesheet" href="css/skeleton-v1.1.css">
-<link rel="stylesheet" href="css/flexslider-v1.8.css">
-<link rel="stylesheet" href="css/main-r9.css">
-<link rel="stylesheet" href="css/media-queries-r9.css">
-<link rel="stylesheet" href="css/sprites-r7.css">
-<link rel="stylesheet" href="css/theme-default-r6.css">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic' rel='stylesheet' type='text/css'>
+{% include slider.html %}
 
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<div class="full dark-blue no-padding">
+  <div class="two spacing"></div>
+  <div class="row">
+    <div class="call-to-action light">
+      <div class="medium-12 large-12 columns centered-text">
+        <p>Open Horizon Labs is a contracting company tackling difficult software problems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+</div>
 
-<!-- Allow IE to render HTML5 -->
-<!--[if lt IE 9]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
-<body>
+<div class="full">
+  <div class="row">
+    <div class="special-title centered-text">
+      <i class="icon-star"></i>
+      <h2>Portfolio</h2>
+      <p>Our featured work thus far.</p>
+      <p class="shortline"></p>
+    </div>
+  </div>
+</div>
 
-<header>
-  <div class="container">
-    <div class="sixteen columns alpha omega">
-      <h1 class="logo" style="margin-top: 0.25em; margin-bottom: 0.5em;">
-        Open Horizon Labs
-      </h1>
-    </div><!-- .columns -->
-  </div><!-- .container -->
-
-  <div class="bottom-gradient">
-    <span class="left"></span>
-    <span class="center"></span>
-    <span class="right"></span>
-  </div>	
-</header>
-
-
-<div id="main" role="main">
-
-  <article id="home">
-    <div class="container">
-      <div class="row box dark">
-        <div class="seven columns">
-          <div class="welcome-container">
-            <h1>Welcome</h1>
-            <p>Welcome to Open Horizon Labs! We are a startup out of Berkeley working on difficult software problems.</p>
-            <a href="#team" class="button call-to-action animate">Who is OHL?</a>
-            <a href="#projects" class="button call-to-action animate">What have we done?</a>
-            <a href="#aboutus" class="button call-to-action animate">Who are James and Greg?</a>
-            <a href="#contact" class="button call-to-action animate">Contact Us!</a>
+<ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  {% for work in site.data.portfolio.items limit:8 %}
+    <li>
+      <a>
+        <img src="{{site.url}}/images/{{ work.small-image }}">
+        <div class="overlay">
+          <div class="thumb-info">
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
           </div>
         </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
-        <div class="nine columns">
-          <div class="flexslider">
-            <ul class="slides notloaded">
-              <li><img src="images/ynys_deullyn.jpg" alt="Ynys Deullyn"/></li>
-            </ul>
-          </div>			
-        </div>
-      </div><!-- .row -->
+{% include services.html %}
 
-      <div class="row" id="team">
-        <div class="sixteen columns titleset">
-          <h2 class="remove-bottom">About the Team</h2>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="two-thirds column">
-          <h4>Open Horizon Labs.</h4>
-          <p>
-            Formed in 2013, OHL opened its doors as a contracting company, with
-            the goal of earning enough money to bootstrap James and Greg
-            through the process of creating a startup. Since then, we have been
-            searching for both our business and our product.
-          </p>
-          <p>
-            We have experience in a broad range of software- and technology-
-            related fields, from videoconferencing and telephony to SAAS
-            scheduling and resource management software. From CPU emulation
-            to data analysis. All largely a significant benefit of providing
-            custom software development as contractors for a considerable
-            amount of time.
-          </p>
-        </div><!-- .columns -->
-        <div class="one-third column">
-          <h4>James and Greg at the office</h4>
-          <img src="images/ohl-office.jpg" alt="" class="scale-with-grid featured" />
-        </div><!-- .columns -->
-      </div><!-- .row -->
-    </div><!-- .container -->
-  </article>
-
-  <article id="projects" class="dark">
-    <div class="container">
-
-      <div class="sixteen columns titleset">
-        <h2 class="remove-bottom">What we do</h2>
-      </div>
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-youtube-play">&nbsp;</i>VideoConferencing</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          We have designed and implemented, from the ground up,
-          videoconferencing software built on top of SIP and H.323, aimed at
-          government compliance for accessibility.
-
-        </p>
-      </div><!-- .columns -->
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-calendar">&nbsp;</i>Resource Scheduling SAAS</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          We have experience with resource scheduling, pattern recognition,
-          and constraint optimization, all wrapped up in a tidy SAAS package.
-        </p>
-      </div><!-- .columns -->
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-cogs">&nbsp;</i>Data Analysis</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          We have created an in house product to perform data analysis on
-          numerous metrics involved with contracting and startup development.
-        </p>
-      </div><!-- .columns -->
-
-      <div class="sixteen columns titleset">
-      </div>
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-smile-o">&nbsp;</i>Social Media Analysis</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          OHL consulted with a client creating a social media website built
-          around senses of humor, to improve their Big Data analysis around
-          many users and humorous media entries.
-          
-        </p>
-      </div><!-- .columns -->
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-pencil">&nbsp;</i>Educational software</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          OHL worked with an education-focused startup to create adaptive
-          learning software targeted at K-12 students.
-        </p>
-      </div><!-- .columns -->
-
-      <div class="one-third column">
-        <div class="headset price clearfix">
-          <h4><i class="fa fa-random">&nbsp;</i>Upcoming</h4>
-        </div>
-        <div class="bottom-gradient add-top add-bottom">
-        </div>
-        <p>
-          Now that OHL has completed its bootstrapping "fundraising" - we
-          are actively building our own product! Stay tuned!
-        </p>
-      </div><!-- .columns -->
-
-    </div><!-- container -->
-  </article>
-
-  <article id="aboutus">
-    <div class="container">	
-      <div class="row" id="team">
-        <div class="sixteen columns titleset">
-          <h2 class="remove-bottom">About Us</h2>
+<div class="full milestones">
+  <div class="row">
+    {% for milestone in page.milestones %}
+      <div class="medium-3 large-3 columns">
+        <div class="milestone boxed light">
+          <strong data-from="{{milestone.from}}" data-to="{{milestone.to}}"></strong>
+          <span>{{milestone.title}}</span>
         </div>
       </div>
-      <div class="row">
-        <div class="two-thirds column">
-          <h4>James Tranovich</h4>
-          <p>
-            Pictured with his wife to the right, James has been an entrepreneur
-            and engineer for as long as he can remember. He is fascinated by
-            financial data and new programming languages, and reads voraciously.
-            He loves rock climbing and the outdoors.
-          </p>
-          <p>
-            James has over ten years of experience working with a variety of
-            clients, from military to federal government, from other startups
-            to more established companies. With OHL, James is currently on his
-            second startup.
-          </p>
-          <h4><i class="fa fa-terminal">&nbsp;</i>Emacs</h4>
+    {% endfor %}
+  </div>
+</div>
 
+{% include about.html %}
 
-        </div>
-        <div class="one-third column">
-          <img src="images/ohl-james.jpg" alt="" class="scale-with-grid featured" />
-        </div>
+{% include testimonials.html bg="meeting" %}
 
-      </div><!-- .row -->
-      <div class="row">
-        <div class="two-thirds column">
-          <h4>Greg Millam</h4>
-          <p>
-         
-            An adventurous nomad, Greg has pursued work and life with equal
-            tenacity, striving to achieve what he can. A registered participant
-            for the next Tough Mudder Tahoe, Greg's drive is useful at OHL.
-          
-          </p>
-          <p>
-         
-            With a background in software development and design, Greg's resume
-            includes tenures at Amazon and Google. Greg's design of an
-            anti-fraud system currently in use at Amazon saves third party
-            sellers millions in lost income every year. At Google, Greg was one
-            of two responsible for pushing and creating YouTube captions and
-            subtitles, making YouTube more globally accessible to everyone.
-          
-          </p>
-          <h4><i class="fa fa-terminal">&nbsp;</i>Vim</h4>
-        </div>
-        <div class="one-third column">
-          <img src="images/ohl-greg.jpg" alt="" class="scale-with-grid featured" />
-        </div>
+{% include clients.html %}
 
-      </div><!-- .row -->
-    </div><!-- container -->
-  </article>
-
-
-  <article id="contact" class="dark">
-    <div class="container">	
-      <div class="two-thirds column">
-        <h3>Talk to Us</h3>
-        <p>We would love to hear from you! Drop us a line.</p>
-
-        <form action="//api.formspree.com/team@openhorizonlabs.com" method="post" class="send-with-ajax">
-
-          <div class="row">
-            <div class="three columns alpha">
-              <label for="form-name">Your Name <span>required</span></label>
-            </div>
-            <div class="seven columns omega">
-              <input type="text" name="name" id="form-name" placeholder="Your Name" required="required" />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="three columns alpha">
-              <label for="form-email">Your Email <span>email required</span></label>
-            </div>
-            <div class="seven columns omega">	
-              <input type="email" name="email" id="form-email" placeholder="your@email.com" required="required" />
-            </div>
-          </div>
-
-          <div class="row">			
-            <div class="three columns alpha">
-              <label for="form-message">Message</label>
-            </div>
-            <div class="seven columns omega">	
-              <textarea name="message" id="form-message"></textarea>
-            </div>
-          </div>
-
-          <div class="seven columns offset-by-three">
-            <button type="submit">Submit Form</button>
-            <div class="ajax-response"></div>
-          </div>
-
-        </form>
-
-      </div><!-- .column -->
-
-      <div class="one-third column">
-        <h3>Find Us</h3>
-        <h5>Our Offices:</h5>
-        <p>
-        950 Gilman St.<br />
-        Berkeley, CA. 94710<br />
-        (559)-464-5526<br />
-        <a href="mailto:team@openhorizonlabs.com">team@openhorizonlabs.com</a>
-        </p>
-
-        <p>
-          <iframe width="325" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=950+Gilman+St,+Berkeley,+CA&amp;aq=0&amp;oq=950+Gilman+St.&amp;sll=37.269174,-119.306607&amp;sspn=25.266132,29.816895&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=950+Gilman+St,+Berkeley,+California+94710&amp;ll=37.879768,-122.298465&amp;spn=0.024558,0.029118&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=950+Gilman+St,+Berkeley,+CA&amp;aq=0&amp;oq=950+Gilman+St.&amp;sll=37.269174,-119.306607&amp;sspn=25.266132,29.816895&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=950+Gilman+St,+Berkeley,+California+94710&amp;ll=37.879768,-122.298465&amp;spn=0.024558,0.029118&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-        </p>
-      </div>
-
-    </div><!-- container -->
-  </article>
-
-</div><!-- #main -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
-<!-- LOCAL VERSION - This version doesn't require a web server to show the page properly -->
-<script src="js/jquery.flexslider-v1.8.min.js"></script>
-<script src="js/jquery.ba-hashchange-v1.3.min.js"></script>
-<script src="js/main-r9.js"></script>
-
-</body>
-</html>
+{% include get-in-touch.html %}

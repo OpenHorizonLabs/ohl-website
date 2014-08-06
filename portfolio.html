@@ -1,0 +1,106 @@
+---
+layout: default
+title: Portfolio
+section_id: portfolio
+---
+
+<div class="full light-yellow">
+  <div class="row">
+    <div class="special-title centered-text">
+      <i class="icon-star"></i>
+      <h2>Portfolio</h2>
+      <p>Our featured work thus far.</p>
+      <p class="shortline"></p>
+    </div>
+  </div>
+
+  <div class="spacing"></div>
+  <div id="portfolio-items" class="row">
+    <div class="large-12 columns">
+      <ul data-orbit="">
+        {% for item in site.data.portfolio.items limit:4 %}
+          <li class="item">
+            <img src="images/{{item.large-image}}">
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+
+  <div id="portfolio-data" class="row">
+    {% for item in site.data.portfolio.items limit:4 %}
+      {% if forloop.first %}
+        {% assign active_class = "active" %}
+      {% else %}
+        {% assign active_class = "" %}
+      {% endif %}
+      <div class="item-intro {{active_class}}" id="item-{{forloop.index}}">
+        <div class="large-8 columns">
+          <h3>{{ item.title }}</h3>
+          <p>
+            {{ item.description }}
+          </p>
+        </div>
+        <div class="large-4 columns">
+          <ul class="info">
+            <li>
+              <strong>Client:</strong>{{ item.client }}
+            </li>
+            <li>
+              <strong>Date:</strong>{{ item.date }}
+            </li>
+            <li>
+              <div class="spacing"></div>
+              <a class="button" href="{{ item.website }}">Visit website</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="full">
+  <div class="row">
+    <div class="special-title centered-text">
+      <h2>Additional</h2>
+      <p>More examples of our fine work.</p>
+      <p class="shortline"></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="gallery-wrapper large-12 columns">
+    <ul class="sub-nav" id="filter">
+      <li class="current">
+        <a data-cat="all" href="#">All</a>
+      </li>
+      {% for category in site.data.portfolio.categories %}
+        <li>
+          <a data-cat="{{ category.name | downcase | replace: " ", "-" }}" href="#">{{category.name}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="spacing"></div>
+    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3">
+      {% for work in site.data.portfolio.items %}
+        <li class="{{ work.categories | map:"name" | join:"##" | downcase | replace:" ", "-" | replace:"##", " "}}">
+          <a>
+            <img src="{{site.url}}/images/{{work.small-image}}">
+            <div class="overlay">
+              <div class="thumb-info">
+                <h3>{{work.title}}</h3>
+                <p>{{ work.categories | map:"name" | join:" &amp; " }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="three spacing"></div>
+<div class="three spacing"></div>

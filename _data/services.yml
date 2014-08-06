@@ -1,0 +1,86 @@
+-
+  - title: Python
+    icon: layout
+    desc:
+      Django, Flask, Bottle, SQLAlchemy.
+    color:
+  - title: Ruby
+    icon: layout
+    desc:
+      Ruby on Rails, Sinatra, RSpec.
+    color:
+  - title: Javascript (client-side)
+    icon: layout
+    desc:
+      Backbone, Spine, Ember, Angular, D3.js.
+    color:
+  - title: Javascript (server-side)
+    icon: layout
+    desc:
+      Node, CoffeeScript, Rhino/Nashorn.
+    color:
+  - title: Java
+    icon: layout
+    desc:
+      Tomcat, Jetty.
+    color:
+  - title: PHP
+    icon: layout
+    desc:
+      Drupal (CiviCRM), Wordpress, Zend.
+    color:
+  - title: Perl
+    icon: layout
+    desc:
+      Perl::CGI, Masonry, Catalyst.
+    color:
+  - title: Database
+    icon: layout
+    desc:
+      Postgres, MySQL, MongoDB, Riak, Redis.
+    color: yellow
+  - title: Mobile
+    icon: layout
+    desc:
+      iOS (Objective C), Android (Java), responsive HTML5.
+    color: yellow
+  - title: DevOps
+    icon: layout
+    desc:
+      Puppet, Chef, Ansible, Vagrant, Docker.
+    color: yellow
+  - title: GPU
+    icon: layout
+    desc:
+      CUDA, OpenGL.
+    color: yellow
+  - title: Systems development
+    icon: layout
+    desc:
+      Low level services in C, C++, Lua.
+    color: yellow
+  - title: Distributed services
+    icon: layout
+    desc:
+      AMQP, NSQ.
+    color: yellow
+  - title: Architecture
+    icon: layout
+    desc:
+      Server configuration and security, designing REST APIs.
+    color: yellow
+  - title: Video/audio telephony
+    icon: layout
+    desc:
+      SIP, H323, real-time transcoding (ffmpeg/libav).
+    color: yellow
+  - title: Embedded programming
+    icon: layout
+    desc:
+      Arduino.
+    color: yellow
+  - title: Data Analysis
+    icon: layout
+    desc:
+      R, Octave, Matlab.
+    color: yellow

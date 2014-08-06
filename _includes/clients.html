@@ -1,0 +1,13 @@
+<div class="full light-grey no-padding">
+  <div class="spacing"></div>
+  <div class="row">
+    {% for client in site.data.clients %}
+      <div class="small-3 large-3 columns">
+        <a href="{{client.url}}">
+          <img src="{{site.url}}/images/{{client.image}}">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="spacing"></div>
+</div>

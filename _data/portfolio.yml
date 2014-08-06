@@ -1,0 +1,91 @@
+categories:
+  - name: Web Design
+  - name: Development
+  - name: 3D Printing
+  - name: Communication
+  - name: Experimental
+  - name: Telephony
+
+items:
+  - small-image: laflife-portfolio-small.png
+    large-image: laflife-portfolio-large.png
+    title: LafLife
+    client: Laflife
+    date: March 2013 to present
+    website: http://laflife.com
+    description:
+      Laflife is the world's first web app powered by your unique sense of humor. We helped Laflife build their recommendation engine and client-facing website, which includes many social features.
+    categories:
+      - name: Development
+      - name: Web Design
+  - small-image: convo-portfolio-small.png
+    large-image: convo-portfolio-large.png
+    title: Convo Anywhere
+    client: Convo Communications
+    website: https://anywhere.convorelay.com/
+    date: January 2012 to December 2013
+    description:
+      Convo Anywhere is a web app designed to allow deaf and hard of hearing individuals call the relay service or other video phones. We built the full stack for them, including SIP routing plans and video interoperability toolchains.
+    categories:
+      - name: Telephony
+      - name: Development
+      - name: Web Design
+      - name: Communication
+  - small-image: vl2-portfolio-small.png
+    large-image: vl2-portfolio-large.png
+    title: Baobab Interactive Story-book
+    client: Gallaudet VL2
+    date: January 2012 to December 2013
+    website: http://vl2storybookapps.com/thebaobab/
+    description:
+      We helped the Visual Language and Visual Learning Center center at Gallaudet launch their first iOS ebook designed to assist children with written English, spoken English, and signed American Sign Language.
+    categories:
+      - name: Development
+      - name: Communication
+  - small-image: metastudy-portfolio-small.png
+    large-image: metastudy-portfolio-large.png
+    title: Metastudy
+    client: University of Illinois at Chicago
+    date: June 2013 to September 2013
+    website: http://dev.metastudy.net
+    description:
+      MetaStudy is a collaborative and visual web application aimed at students in medical fields. The goal is to help students identify and understand the implications of research design and data analysis choices.
+    categories:
+      - name: Communication
+      - name: Development
+      - name: Web Design
+  - small-image: sunnovations-portfolio-small.png
+    title: Sunnovations
+    categories:
+      - name: Web Design
+      - name: Development
+  - small-image: metadoc-portfolio-small.png
+    title: MetaDoc
+    categories:
+      - name: Web Design
+      - name: Development
+  - small-image: ebmlcs-portfolio-small.jpg
+    title: Evidence based medicine library consulting service
+    categories:
+      - name: Communication
+      - name: Development
+  - small-image: ultimaker-portfolio-small.jpg
+    large-image: ultimaker-portfolio-large.jpg
+    title: 3D Printing
+    categories:
+      - name: 3D Printing
+      - name: Experimental
+  - small-image: carboundary-portfolio-small.png
+    title: CarBoundary
+    categories:
+      - name: Development
+      - name: Experimental
+  - small-image: banana-portfolio-small.png
+    title: Banana Client
+    categories:
+      - name: Communication
+  - small-image: bzwikipedia-portfolio-small.png
+    title: BZWikipedia
+    categories:
+      - name: Development
+      - name: Experimental

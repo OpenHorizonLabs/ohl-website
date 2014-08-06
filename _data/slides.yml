@@ -1,0 +1,20 @@
+- image: outside-banner.jpg
+  desc_location: left
+  desc:
+    <h2>The office</h2>
+    <div class="small-spacing"></div>
+    <p class="distinct">Where we hammer out our craft.</p>
+- image: jamesdesk-banner.jpg
+  desc_location: right
+  desc:
+    <h2>Custom Software Design</h2>
+    <div class="small-spacing"></div>
+    <p class="distinct">Every product is unique.</p>
+- image: team-banner.jpg
+  desc_location: left
+  desc:
+    <h2>We understand your needs.</h2>
+    <div class="small-spacing"></div>
+    <p class="distinct">Contact us today!</p>
+    <div class="small-spacing"></div>
+    <a class="button boxed" href="mailto:team@openhorizonlabs.com">team@openhorizonlabs.com</a>

@@ -1,0 +1,71 @@
+
+<div class="full light-yellow">
+  <div class="row">
+    <div class="special-title centered-text">
+      <i class="icon-users"></i>
+      <h2>Who we are</h2>
+      <p>The technological experts at Open Horizon Labs.</p>
+      <p class="shortline"></p>
+    </div>
+    <div class="spacing"></div>
+    <div class="spacing"></div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <p>
+        <span class="drop-letters">We</span>
+        are a team of passionate experts who constantly strive to improve their craft. We also maintain a wide-ranging network of recommended experts in almost any field &mdash; designers, programmers, artists, photographers, copy-writers. This network enables us to take on any project of any size.
+      </p>
+      <p>Each project is unique. We always strive to imbue each with our personal touch.</p>
+      <p>We are based in Berkeley, and regularly host hackathons, technical conferences for disabled people and minorities, and support other small start-ups in their endeavors.</p>
+    </div>
+  </div>
+</div>
+
+<div class="members">
+  <div class="full light-yellow no-padding">
+    <div class="row">
+      {% for member in site.data.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class="medium-4 large-4 columns">
+          <div class="member centered-text {{active_class}}" data-target="#member-{{forloop.index}}">
+            <img src="{{site.url}}/images/{{member.image}}">
+            <h3>{{member.name}}</h3>
+            <p class="position">{{member.position}}</p>
+            <p class="active-line"></p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="full white">
+    <div class="row">
+      {% for member in site.data.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class="member-intro {{active_class}}" id="member-{{forloop.index}}">
+          <div class="medium-8 large-8 columns">
+            <p>{{member.desc}}</p>
+          </div>
+          <div class="medium-4 large-4 columns">
+            <div class="socials">
+              {% for social in member.socials %}
+                <a href="{{social.link}}">
+                  <i class="icon-{{social.name}} {{social.color}}"></i>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
