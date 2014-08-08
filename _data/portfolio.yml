@@ -71,7 +71,7 @@ items:
       - name: Development
   - small-image: ultimaker-portfolio-small.jpg
     large-image: ultimaker-portfolio-large.jpg
-    title: 3D Printing
+    title: Device Prototyping
     categories:
       - name: 3D Printing
       - name: Experimental

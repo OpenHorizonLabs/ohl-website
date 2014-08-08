@@ -2,13 +2,16 @@
   name: James Tranovich
   position: Co-Founder &amp; Project Manager
   desc:
-    James has over ten years of experience in business, financial operations, and project management. He has worked as a consultant and as an engineer with a variety of clients in government, academia, satellite communications, solar technology, and the telephony industry, including West Point and Gallaudet University. He loves exploring new technologies such as <a href="http://www.rust-lang.org/">Rust</a> and <a href="https://github.com/bitly/nsq">NSQ</a>. In his spare time he reads voraciously; a recent favorite is The Dream of Reason by Anthony Gottlieb. Open Horizon Labs is his second startup.
+    James has over ten years of experience in business, financial operations, and project management. He has worked as a consultant and as an engineer with a variety of clients in government, academia, satellite communications, solar technology, and the telephony industry, including West Point and Gallaudet University. He loves exploring new technologies such as <a href="http://www.rust-lang.org/" target="_blank">Rust</a> and <a href="https://github.com/bitly/nsq" target="_blank">NSQ</a>. In his spare time he reads voraciously; a recent favorite is The Dream of Reason by Anthony Gottlieb. Open Horizon Labs is his second startup.
   socials:
     - name: mail
       link: mailto:james@openhorizonlabs.com
       color: yellow
     - name: twitter
       link: https://twitter.com/cantsin_
+      color: yellow
+    - name: github
+      link: https://www.github.com/cantsin
       color: yellow
 - image: greg-pic.jpg
   name: Greg Millam
@@ -21,6 +24,9 @@
       color: yellow
     - name: twitter
       link: https://twitter.com/captdeaf
+      color: yellow
+    - name: github
+      link: https://www.github.com/captdeaf
       color: yellow
     - name: play
       link: https://www.youtube.com/user/captdeaf
