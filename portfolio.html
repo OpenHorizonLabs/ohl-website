@@ -84,7 +84,7 @@ section_id: portfolio
       {% endfor %}
     </ul>
     <div class="spacing"></div>
-    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3 yellow">
+    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3 blue">
       {% for work in site.data.portfolio.items %}
         <li class="{{ work.categories | map:"name" | join:"##" | downcase | replace:" ", "-" | replace:"##", " "}}">
           <a style="cursor:default;">
