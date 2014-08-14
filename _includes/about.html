@@ -57,7 +57,7 @@
           <div class="medium-4 large-4 columns">
             <div class="socials">
               {% for social in member.socials %}
-                <a href="{{social.link}}" target="_blank">
+                <a href="{{social.link}}" target="_blank" title="{{social.title}}">
                   <i class="icon-{{social.name}} {{social.color}}"></i>
                 </a>
               {% endfor %}

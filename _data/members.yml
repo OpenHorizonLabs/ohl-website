@@ -5,12 +5,15 @@
     James has over ten years of experience in business, financial operations, and project management. He has worked as a consultant and as an engineer with a variety of clients in government, academia, satellite communications, solar technology, and the telephony industry, including West Point and Gallaudet University. He loves exploring new technologies such as <a href="http://www.rust-lang.org/" target="_blank">Rust</a> and <a href="https://github.com/bitly/nsq" target="_blank">NSQ</a>. In his spare time he reads voraciously; a recent favorite is The Dream of Reason by Anthony Gottlieb. Open Horizon Labs is his second startup.
   socials:
     - name: mail
+      title: Email
       link: mailto:james@openhorizonlabs.com
       color: yellow
     - name: twitter
+      title: Twitter
       link: https://twitter.com/cantsin_
       color: yellow
     - name: github
+      title: GitHub
       link: https://www.github.com/cantsin
       color: yellow
 - image: greg-pic.jpg
@@ -20,15 +23,19 @@
     Greg's resume includes tenures at Amazon and Google. Greg's design of an anti-fraud system currently in use at Amazon saves third party sellers millions in lost income every year. At Google, Greg was one of two responsible for pushing and creating YouTube captions and subtitles, making YouTube globally accessible to everyone. He spends his weekends diving along the California coast.
   socials:
     - name: mail
+      title: Email
       link: mailto:greg@openhorizonlabs.com
       color: yellow
     - name: twitter
+      title: Twitter
       link: https://twitter.com/captdeaf
       color: yellow
     - name: github
+      title: GitHub
       link: https://www.github.com/captdeaf
       color: yellow
     - name: play
+      title: YouTube
       link: https://www.youtube.com/user/captdeaf
       color: yellow
 - image: wadud-pic.jpg
@@ -38,8 +45,10 @@
     Wadud, a civil engineer and physics graduate, is an experienced Ruby programmer who is always looking for the next challenge. He's passionate about social, political, and environmental issues and is interested in leveraging technology to solve current problems in those domains. His favorite basketball team is currently whichever team most recently gave the Lakers a beatdown.
   socials:
     - name: mail
+      title: Email
       link: mailto:wadud@openhorizonlabs.com
       color: yellow
     - name: twitter
+      title: Twitter
       link: https://twitter.com/wjandali
       color: yellow
