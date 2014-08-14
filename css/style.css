@@ -509,6 +509,9 @@ textarea {
 }
 
 /* gallery */
+ul.gallery {
+  padding: 0.25em;
+}
 ul.gallery img {
   width: 100%;
 }
@@ -517,8 +520,12 @@ ul.gallery li {
   -moz-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
+  padding: 0.25em;
 }
 ul.gallery li a {
+  border: 4px solid #999;
+  border-radius: 1em;
+  overflow: hidden;
   position: relative;
   display: block;
 }
@@ -548,9 +555,11 @@ ul.gallery li a p {
 }
 ul.gallery li a:hover .overlay {
   opacity: 1;
+  overflow: hidden;
 }
 ul.gallery li.hidden {
   opacity: 0.3;
+  overflow: hidden;
 }
 
 /* smart appear */
